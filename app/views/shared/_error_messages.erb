@@ -1,0 +1,9 @@
+ <h3>
+    <%= "#{ object.class.human_name} couldn't be saved" %>
+</h3>      
+<ul>
+  <% o.errors.full_messages.each do |msg| %>
+  <li>
+    <%=msg %>
+  </li>
+</ul>
